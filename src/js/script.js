@@ -42,6 +42,7 @@ class Calculator {
         const previous = +this.prevOperationText.innerText.split(" ")[0];
         const current = +this.currentOperationText.innerText;
 
+        // CHANGE LAST OPERATION
         switch (operation) {
             case "+":
                 operationValue = previous + current;
@@ -130,7 +131,6 @@ class Calculator {
     processEqualOperator() {
         // GET THE SECOND PART OF PREVIOUS OPERATIO; FIRST PART IS ON LINE 42
         const operation = prevOperationText.innerText.split(" ")[1];
-
         this.processOperation(operation);
     }
 }
